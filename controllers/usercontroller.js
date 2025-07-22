@@ -1,7 +1,7 @@
 import User from "../Model/User.js";
 import bcrypt from "bcryptjs";
 import Jwt from "jsonwebtoken";
-import sendEmail from "../sendEmail.js";
+import sendEmail from "../routes/sendEmail.js";
 
 const forsignup = async (req, res) => {
   try {
