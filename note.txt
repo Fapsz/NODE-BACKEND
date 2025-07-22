@@ -1,0 +1,33 @@
+CRUD operation 
+Create - 
+Read - 
+Update - 
+Delete - 
+
+
+HTTP Method 
+    GET - Read 
+    POST - Create 
+    PUT - Update 
+    DELETE - Delete 
+
+
+
+    RW
+
+
+
+
+
+    MVC
+    MODEL DEFINE THE STRUTURE OF THE DATABASE.
+           IT IS USED TO TALK TO THE DATABASE.
+    VIEW   THIS IS WHAT THE USER. I.E., HTML,CSS OR FRONTEND TEMPLATES OR FRAMEWORKS.
+    CONTROLLER   IT HANDLES REQUEST AND DECIDES WHAT TO. IT IS WHAT CONNECTS WHAT THE USER SEES AND DATABASE.
+
+
+
+    Relationship in backend simply means how 3 or more pieces of data are connected.
+
+    exmples
+    A user can 
