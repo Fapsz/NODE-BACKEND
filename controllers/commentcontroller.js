@@ -1,4 +1,4 @@
-import Comment from "../Model/comment.js";
+import Comment from "../Model/Comment.js";
 import Post from "../Model/Post.js";
 
 let addcomments = async (req, res) => {

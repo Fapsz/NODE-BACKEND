@@ -3,16 +3,12 @@ import path from 'path';
 import { fileURLToPath } from "url";
 import mongoose from 'mongoose';
 import cookieParser from "cookie-parser";
-// import User from "./Model/User.js";
 import userRoutes from './routes/userRoutes.js'
 import CommentRoutes from './routes/commentRoutes.js';
 import postRoutes from './routes/postRoutes.js';
-// import { del1post, forsignup, get1post, getAllPosts, update1post } from "./controllers/PostController.js";
 import { get } from "http";
 import { config } from "dotenv";
 config()
-// const express = require('express');
-// const path = require('path');
 const app = e();
 const port = process.env.PORT || 3500;
 const __filename = fileURLToPath(import.meta.url);
