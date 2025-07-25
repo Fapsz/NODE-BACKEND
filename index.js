@@ -8,6 +8,7 @@ import CommentRoutes from './routes/commentRoutes.js';
 import postRoutes from './routes/postRoutes.js';
 import { get } from "http";
 import { config } from "dotenv";
+import cors from 'cors';
 config()
 const app = e();
 const port = process.env.PORT || 3500;
@@ -30,6 +31,11 @@ app.use(e.json());
 app.use(e.urlencoded({extended:true}))
 
 app.use(e.static('./box'))
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true,
+}));        
 
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'box','index.html'))

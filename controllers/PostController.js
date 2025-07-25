@@ -34,10 +34,7 @@ let createPost = async (req, res) => {
 };
 
 const getAllPosts = async (req, res) => {
-  const myPosts = await Post.find().populate({
-    path: " comments",
-    select: "comment author",
-  });
+  const myPosts = await Post.find()
 
   if (!myPosts) {
     return res.status(404).json({
