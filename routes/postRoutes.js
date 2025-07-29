@@ -10,9 +10,7 @@ import authorize from "../middlewares/authorize.js";
 import upload from "../middlewares/multer.js";
 const router = e.Router();
 
-router.post(
-  "/",
-  authorize(["admin", "user"]),
+router.post("/", authorize(["admin", "user"]),
   upload.single("image"),
   createPost
 );
