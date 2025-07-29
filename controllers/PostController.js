@@ -34,7 +34,7 @@ let createPost = async (req, res) => {
 };
 
 const getAllPosts = async (req, res) => {
-  const myPosts = await Post.find.populate({
+  const myPosts = await Post.find().populate({
     path: "author",
     select: "fullname",
   })
