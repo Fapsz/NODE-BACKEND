@@ -17,7 +17,7 @@ router.get("/", getAllUsers);
 
 router.get("/:id", get1user);
 
-router.delete("/:id", authorize(["Admin", "User"]), del1user);
+router.delete("/:id", authorize(["Admin"]), del1user);
 
 router.put("/:id", update1user);
 
